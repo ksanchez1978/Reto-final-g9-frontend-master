@@ -5,7 +5,8 @@ body {
     /* background-color: #5390d9 */
     background-color: #FFDEE9;
 background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-
+padding: 0;
+margin: 0;
 }
 
 /* ------titulos section-4-------- */
@@ -43,22 +44,13 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 
 /* --------config. titulo quines somos------------- */
-.quienes-somos-titulo__container h2 {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 70%;
-    left: 50%;
-    font-size: 5rem;
-    color: rgba(4, 1, 23, 0.997);
 
-
-
-}
 
 
 
 /* ------------config. tamaño de imagenes-------------- */
 .carousel .carousel-img {
+    
     height: auto;
     width: auto;
     max-height: 340px;
@@ -67,8 +59,26 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
     margin-right: 5px;
 }
 
+.quienes-somos-titulo__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/1/1;
+    font-size: 4rem;
+    color: rgba(22, 8, 95, 0.997);
+}
+
+.quienes-somos__img{
+    grid-area: 1/1/1;
+    font-size: 1rem;
+    color: rgba(230, 229, 240, 0.87);
+}
+
 .quienes-somos-img__container {
-    background: linear-gradient(rgba(0, 0, 0, .50)0%, rgba(0, 0, 0, .50)100% ), url(./img/quienes-somos.jpg);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: blue;
+    /*background: linear-gradient(rgba(0, 0, 0, .50)0%, rgba(0, 0, 0, .50)100% ), url(./img/quienes-somos.jpg);*/
     width: 100%;
     height: 650px;
     border-radius: 0.5em;
